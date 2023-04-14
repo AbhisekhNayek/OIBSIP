@@ -1,0 +1,159 @@
+body{
+  background-color: #ff0000;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem 0 3rem;
+}
+nav > img{
+  width: 15%;
+}
+ul{
+  display: flex;
+  margin-top: 3rem;
+}
+li > a{
+  color: #ffffff;
+  text-decoration: none;
+}
+ul > li{
+  font-family: sans-serif;
+  font-size: 17px;
+  margin: 15px;
+}
+.home > .box{
+  display: flex;
+}
+.sec1 > h3{
+  color: #ffffff;
+  font-size: 3rem;
+  font-family: system-ui;
+  margin: 0;
+}
+.sec1 > h4{
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  margin: 0;
+}
+.sec1 > p{
+  color: #ffffff;
+  font-family: sans-serif;
+  font-style: justify;
+}
+
+.sec1{
+  margin: 6rem 3rem;
+}
+.sec2{
+  margin: 0 3rem;
+}
+.button{
+  margin-top: 3rem;
+}
+.button > a{
+  border: 1px solid white;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.7rem 2rem;
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+.drinks{
+  display: flex;
+  justify-content: center;
+}
+.drinks > img{
+  width: 5%;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+}
+.drinks > img:hover{
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+}
+
+footer {
+  background-color: #000000;
+}
+
+footer h3 {
+  margin-top: 0;
+  color: rgb(255, 255, 255);
+}
+
+footer p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-md-6 {
+  flex-basis: calc(50% - 1px);
+  margin-bottom: 0px;
+}
+
+footer:before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #fd0000;
+}
+
+.social-icons li a:hover {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.social-icons li a:hover i.fa-facebook {
+  color: #0051ff; /* Facebook blue */
+}
+
+.social-icons li a:hover i.fa-twitter {
+  color: #258ccc; /* Twitter blue */
+}
+
+.social-icons li a:hover i.fa-instagram {
+  color: #e4405f; /* Instagram pink */
+}
+
+.social-icons li a:hover i.fa-instagram {
+  color: #fe0000; /*Youtube pink */
+}

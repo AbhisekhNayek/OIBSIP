@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="temp_container">
+        <div class="header">
+            <span class="heading"> TEMPARATURE CONVERTER</span>
+            <span class="icon"><i class="fas fa-temparatur-high"></i></span>
+        </div>
+
+        <div class="text_symbol">
+            <span>&#8451 &#8457</span>
+        </div>
+
+        <div class="input_temparature">
+            <div class="celsius">
+                <span class="text_celsius">CELSIUS &#8451</span>
+                <input type="number" value="0" id="celcius">
+            </div>
+            <div class="fahrenheit">
+                <span class="text_fahrenheit">FAHRENHEIT &#8457</span>
+                <input type="number" value="32" id="fahrenheit">
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        var celsius = document.getElementById("celcius");
+        var fahrenheit = document.getElementById("fahrenheit");
+
+        celsius.addEventListener('input', function() {
+        let cel = this.value;
+        let fah = (cel * 1.8) + 32;
+        if (!Number.isInteger(fah)) {
+            fah = fah.toFixed(4);
+        }
+        fahrenheit.value = fah;
+        });
+
+        fahrenheit.addEventListener('input', function() {
+        let fah = this.value;
+        let cel = (fah - 32) / 1.8;
+        if (!Number.isInteger(cel)) {
+            cel = cel.toFixed(4);
+        }
+        celsius.value = cel;
+        });
+    </script>
+</html>

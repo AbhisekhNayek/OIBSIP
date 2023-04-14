@@ -1,0 +1,126 @@
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --primary-color : #0022ff; 
+}
+
+body{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0d9d9;
+    overflow: hidden;
+}
+
+.temp_container{
+    min-width: 530px;
+    width: 40vw;
+    min-height: 340px;
+    height: 54vh;
+    border-radius: 36px;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 9px #323131,
+                -5px -5px 9px #3d3c3c;
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 31px;
+    background: linear-gradient(145deg,#f0f0f0, #cacaca);
+    box-shadow: 5px 5px 8px #a1a1a1,
+                -5px -5px 8px #ffffff;
+}
+
+.fa-temparature-high{
+    font-size:70px;
+}
+
+.text_symbol{
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--primary-color);
+    padding: 0 20px;
+    font-size: 60px;
+    margin: 15px 0;
+    border-radius: 35px;
+    box-shadow: inset 6px 6px 4px #c5c5c5,
+                inset -6px -6px 4px #fbfbfb;
+}
+
+.input_temprature{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input{
+    padding: 10px;
+    width: 97%;
+    font-weight: bold;
+    border: 2px;
+    justify-content: space-evenly;
+    border-radius: 36px;
+    box-shadow: inset 6px 6px 4px #bbb6b6,
+                inset -6px -6px 4px #bfbbbb;
+    outline: 5px;
+    background: #e1e1e1;
+}
+
+.text_celsius,.text_fahrenheit{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media(max-width : 753px){
+    .temp_container{
+        min-width: 400px;
+        height: auto;
+    }
+    .header{
+        font-size: 25px;
+    }
+    .fa-temparature-high{
+        font-size: 50px;
+    }
+    .text_symbol{
+        height: auto;
+    }
+    .temp_icon{
+        font-size: 40px;
+    }
+    .input_temprature{
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .celsius,.fahrenheit,input{
+        width: 100%;
+    }
+
+    @media (max-width : 433px) {
+        .temp_container{
+            min-width: 300px;
+        }
+    }
+}
